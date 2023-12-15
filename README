@@ -17,3 +17,7 @@
 5. "crear una aplicacion"
 
 - python manage.py startapp productos-->(nombre de la aplicacion)
+
+5. "intalar la aplicaccion en setting con el nombre de clase(se encuentra app.py)"
+
+- Ejemplo : 'productos.apps.ProductosConfig',

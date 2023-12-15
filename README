@@ -1,0 +1,19 @@
+1. "Intalar django en el ambiente virtual "
+
+- pipenv django==4.1.7 
+
+2. "Iniciar la instancia"
+
+- pipenv shell
+
+3. "crear Archivo django"
+
+- django-admin startproject NombreCarpeta . 
+
+4. "iniciar servidor"
+
+- python manage.py runserver
+
+5. "crear una aplicacion"
+
+- python manage.py startapp productos-->(nombre de la aplicacion)

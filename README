@@ -1,23 +1,29 @@
 1. "Intalar django en el ambiente virtual "
 
-- pipenv django==4.1.7 
+    - pipenv django==4.1.7 
 
 2. "Iniciar la instancia"
 
-- pipenv shell
+    - pipenv shell
 
 3. "crear Archivo django"
 
-- django-admin startproject NombreCarpeta . 
+    - django-admin startproject NombreCarpeta . 
 
 4. "iniciar servidor"
 
-- python manage.py runserver
+    - python manage.py runserver
 
 5. "crear una aplicacion"
 
-- python manage.py startapp productos-->(nombre de la aplicacion)
+    - python manage.py startapp productos-->(nombre de la aplicacion)
 
 5. "intalar la aplicaccion en setting con el nombre de clase(se encuentra app.py)"
 
-- Ejemplo : 'productos.apps.ProductosConfig',
+    - Ejemplo : 'productos.apps.ProductosConfig',
+
+
+6. "comando para crear las migraciones"(estos se crean en modelos, si no esta productos en los setting.py no se crean las migraciones)
+
+    - python manage.py makemigrations
+

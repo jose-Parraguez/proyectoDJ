@@ -19,7 +19,11 @@
         {% for producto in productos %}
     
         <tr>
-            <td>{{producto.nombre}}</td>
+            <td>
+                <a href="{% url 'producto_detalle' producto.id %}">
+                {{producto.nombre}}
+            </a>
+            </td>
             <td>{{producto.stock}}</td>
             <td>{{producto.puntaje}}</td>
             <td>{{producto.categoria}}</td>

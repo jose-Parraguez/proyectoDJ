@@ -1,15 +1,14 @@
-from django.http import HttpResponse,JsonResponse
+from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Producto
 
 # Create your views here.
 
 def index(request):
-    productos = Producto.objects.all().values() # llamar todos los productos
+    productos = Producto.objects.all() # llamar todos los productos
 
-    print(productos)
-    # productos = Producto.objects.filter(puntaje=5)#filtrar por lenguaje
-    # productos = Producto.objects.get(pk = 1)#filtrar por lenguaje
-
-    return JsonResponse(list(productos),safe= False)#json response solo toma archivos en diccionario o list
-    
+    return render(
+        request,
+        'index.html',
+        context ={'productos':productos}
+    )
